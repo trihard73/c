@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\GameController\HashIDs.cs" />
     <Compile Include="Assets\Scripts\GameController\KeyCardSpawn.cs" />
     <Compile Include="Assets\Scripts\GameController\LastPlayerSighting.cs" />
+    <Compile Include="Assets\Scripts\LevelDynamics\BoxTriggerDoorOpen.cs" />
     <Compile Include="Assets\Scripts\LevelDynamics\KeyPickUp.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInventory.cs" />
