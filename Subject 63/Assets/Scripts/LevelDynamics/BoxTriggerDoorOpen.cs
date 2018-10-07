@@ -7,7 +7,7 @@ public class BoxTriggerDoorOpen : MonoBehaviour {
     bool closed;
     GameObject player;
     Animator anim;
-    AudioSource source;
+    public AudioSource source;
     public AudioClip doorOpen;
     public GameObject door;
 
