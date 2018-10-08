@@ -99,12 +99,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Camera\CameraCollsion.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyAnimation.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyShooting.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemySight.cs" />
     <Compile Include="Assets\Scripts\Enemy\WayPointGizmo.cs" />
+    <Compile Include="Assets\Scripts\GameController\HashIDs.cs" />
+    <Compile Include="Assets\Scripts\GameController\KeyCardSpawn.cs" />
+    <Compile Include="Assets\Scripts\GameController\LastPlayerSighting.cs" />
+    <Compile Include="Assets\Scripts\LevelDynamics\BoxTriggerDoorOpen.cs" />
+    <Compile Include="Assets\Scripts\LevelDynamics\KeyPickUp.cs" />
+    <Compile Include="Assets\Scripts\LevelDynamics\TriggerOne.cs" />
+    <Compile Include="Assets\Scripts\LevelDynamics\Win.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerInventory.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\ScreenFader\SceneFaderInOut.cs" />
+    <Compile Include="Assets\Scripts\Unapplied\AnimatorSetup.cs" />
+    <Compile Include="Assets\Scripts\Unapplied\FadeSceneIn.cs" />
+    <Compile Include="Assets\Scripts\Unapplied\QuitToMainMenu.cs" />
+    <Compile Include="Assets\Scripts\Unapplied\Tags.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
