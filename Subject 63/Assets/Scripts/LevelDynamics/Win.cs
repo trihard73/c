@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Win : MonoBehaviour {
 
-    GameObject player;
+    public GameObject player;
     SceneFaderInOut sceneFadeInOut;
     float timer;
     public float timeToEndLevel = 2f;
@@ -19,8 +19,10 @@ public class Win : MonoBehaviour {
     {
         if (other.gameObject == player) {
             timer += Time.deltaTime;
-            if (timer >= timeToEndLevel)
-                sceneFadeInOut.EndScene();
+            print("player");
+            SceneManager.LoadScene("SampleScene");
+            /*if (timer >= timeToEndLevel)
+                sceneFadeInOut.EndScene();*/
         }
     }
 }
