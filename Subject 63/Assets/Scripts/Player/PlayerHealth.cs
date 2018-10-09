@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour {
 	public AudioClip deathClip;
 
 	private Animator anim;
-	private PlayerMovement playerMovement;
+	private PlayerControl playerMovement;
 	private HashIDs hash;
 	private SceneFaderInOut sceneFadeInOut;
 	private LastPlayerSighting lastPlayerSighting;
@@ -18,7 +18,7 @@ public class PlayerHealth : MonoBehaviour {
 
 	void Awake () {
 		anim = GetComponent<Animator> ();
-		playerMovement = GetComponent <PlayerMovement> ();
+		playerMovement = GetComponent <PlayerControl> ();
 		hash = GameObject.FindGameObjectWithTag (Tags.gameController).GetComponent <HashIDs> ();
 		sceneFadeInOut = GameObject.FindGameObjectWithTag (Tags.fader).GetComponent<SceneFaderInOut> ();
 		lastPlayerSighting = GameObject.FindGameObjectWithTag (Tags.gameController).GetComponent<LastPlayerSighting> ();
